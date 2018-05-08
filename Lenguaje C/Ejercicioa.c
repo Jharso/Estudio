@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>                                              //pre procesos command
 
-int main()                                                       //int main() es una funcion base que todo programa debe tener
+void main()                                                       //int main() es una funcion base que todo programa debe tener
 {
     int res;                                                     //el nombre de una variable no puede comenzar con número
     int n;

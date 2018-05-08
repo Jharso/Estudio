@@ -1,7 +1,7 @@
 //Construya un algoritmo que dado tres números ingresados por teclado busque el mayor de los tres
 #include <stdio.h>
 
-int main(){
+void main(){
     int n1;
     int n2;
     int n3;
