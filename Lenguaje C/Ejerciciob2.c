@@ -4,7 +4,7 @@ void main()
 {
     int c, vt, n;
 
-    for(c=0; c>3; c++){
+    for(c=0; c>3; c++){    //comentario de prueba
       
         printf("Ingrese Número: ");
         scanf("%d",&n);
