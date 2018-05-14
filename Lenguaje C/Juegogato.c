@@ -15,9 +15,7 @@ void evaluar();
 int main(){
 
     tablero();
-
     while((ct<=9) && (g==0)){      
-
         
         jugador();
         evaluar();  
@@ -25,15 +23,10 @@ int main(){
         maquina();
         evaluar();
         }
-
     }
     return 0;
 }
-
-
 //**************************************************************************************************************************
-
-
 void maquina(void){
 
     srand (time(NULL));
@@ -48,27 +41,21 @@ void maquina(void){
     ct=ct+1;
     tablero();
 }
-
 void jugador(void){
 
     p[ij];
-    ut=ij;
-              
+    ut=ij;              
    while(ij==bdt[0] ||  ij==bdt[1] ||  ij==bdt[2] || ij==bdt[3] || ij==bdt[4] || ij==bdt[5] || ij==bdt[6] || ij==bdt[7]){
    
         printf("ingrese la posición en el tablero \n");
-        scanf("%d", &ij);
-    
+        scanf("%d", &ij);    
        }
     bdt[i]=ij;
     p[ij]='X';
     i=i+1;
     ct=ct+1;
     tablero();
-
 }
-
-
 void tablero(void){
          system("clear");
         //printf("valor de ut %d,   valor de ij %d valor de im %d\n",ut,ij, im);
@@ -77,12 +64,7 @@ void tablero(void){
         printf(" 7│ 8 │9          %c│ %c │%c\n", p[7],p[8],p[9]);
         printf(" 4│ 5 │6          %c│ %c │%c\n", p[4],p[5],p[6]);
         printf(" 1│ 2 │3          %c│ %c │%c\n", p[1],p[2],p[3]);
-       
-
-    
 }
-
-
 void evaluar(void){
 
     if((p[1]=='X' && p[2]=='X' && p[3]=='X')||(p[1]=='O' && p[2]=='O' && p[3]=='O')) {    //#1
@@ -124,6 +106,5 @@ void evaluar(void){
 
         printf("\n¡¡¡¡¡¡¡¡¡¡¡GANÓ!!!!!!!!!!! \n");
         g=1;
-    }
-     
+    }     
 }
