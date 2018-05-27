@@ -1,0 +1,23 @@
+#include<stdio.h>
+// algun ejercicio xd
+int main() {
+	int numero,t,a,b,c,r,e;
+	printf("ingrese un numero de 3 digitos \n");
+	scanf("%d",&numero);
+	if (numero<999)
+		{
+		t== numero/100;				
+		a== t%10;
+		
+		r== numero/10;
+		b== r%10;
+		
+		e== numero/1;
+		c== e%10;
+		
+		printf("el numero es %d \n", numero);
+		printf("el numero invertido es %d \n",a);
+		}
+	printf("ingrese un numero valido");
+return 0;
+}
