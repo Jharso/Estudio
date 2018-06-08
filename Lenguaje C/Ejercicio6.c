@@ -1,0 +1,1 @@
+// Leer dos números de entrada y determinar el cuociente y el resto de la división entre ambos, utilizando solo sumas y restas, e imprimir valores finales.

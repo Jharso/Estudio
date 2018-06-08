@@ -1,0 +1,1 @@
+//Determinar e imprimir la cantidad de números divisibles por N entre el intervalo [1,1000]

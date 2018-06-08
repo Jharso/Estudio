@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int ij=0, im=0, ut, bdt[9], i=0;  //ij=marcadorjugador; im:marcador maquina; ut: posición ultimo turno; bdt: movimientos guardados; i: tamaño de bdt;
+int ij=0, im=0, bdt[9], i=0;  //ij=marcadorjugador; im:marcador maquina; bdt: movimientos guardados; i: posicion de bdt;
 int ct=1, g;   // contador de turno y ganador
 int r=0;
 char p[9];  //posición
