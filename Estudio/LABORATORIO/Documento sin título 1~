@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main (){
+	int a[15],x,i,aux;
+	i=1;x=1;
+	srand(time(NULL));
+	while(i<=15){
+		x=1+rand()%(21-1);
+		a[i]=x;
+		printf("arreglo numero[%d]=%d\n",i,a[i]);
+		i++;
+	}
+	i=1;aux=0;
+		while(i<=15){
+		aux=aux+a[i];
+		i++;
+		}
+	printf("La suma del arreglo es:%d\n",aux);	 
+}
