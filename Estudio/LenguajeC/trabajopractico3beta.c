@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define alumnos 50
-#define curso 40                                       //considerar esta constante  -1, porque almacena en su posición 0 la ID del alumno
-#define promocion 20
+#define alumnos 3
+#define curso 3            //considerar esta constante  -1, porque almacena en su posición 0 la ID del alumno
+#define promocion 2
 
 void gennotas(float [alumnos][curso][promocion]);
 void impnotas(float [alumnos][curso][promocion]);
@@ -67,6 +67,8 @@ void impnotas(float datos[alumnos][curso][promocion]){
 }
 
 void detallenotas(float datos[alumnos][curso][promocion]){
+    //El mejor y peor alumno por año con su ID
+    //La mejor y peor nota por año con su ID
     int i,j,k,z,d=curso-1;
     float ma,maid,mn,mnid,prom1[alumnos][2]={0};
     i=0,    j=1,    k=0;    
@@ -174,7 +176,7 @@ void detallenotas(float datos[alumnos][curso][promocion]){
         z=0;
         while(z<alumnos){
             
-            if(prom1[z][1]<ma){                                       //solo cambia evaluación lógica para buscar el menor
+            if(prom1[z][1]<ma){
                 ma=prom1[z][1];
                 maid=prom1[z][0];
             }
@@ -184,11 +186,3 @@ void detallenotas(float datos[alumnos][curso][promocion]){
         i++;                
     }                                  
 }
-
-
-/*
-Trabajo práctico de arreglos de 3 dimensiones
-Rodrigo A. Jaramillo Solar
-Rut=17194732-4
-01 de octubre del 2018
-*/
