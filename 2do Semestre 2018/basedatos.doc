@@ -1,0 +1,11 @@
+
+hola esto es una prueba para entender el funcionamiento de la funcion FILE
+esta es la segunda linea de la prueba
+esta es la tercera linea de la prueba
+para seguir esta prueba haremos un salto de linea
+
+
+You read the value into c. Then you increase the uninitialized variable n by one and write n to the file. Since n is uninitialized you invoke undefined behaviour.
+
+
+2
