@@ -10,6 +10,7 @@ void ingresar(char direccion[]);  //guarda
 void eliminar(char direccion[]);  //borra
 void imprimir(char direccion[]);  //carga
 void actualizar(char direccion[]);
+
 typedef struct estr_alum
 {
     char nombre[10];
@@ -17,6 +18,7 @@ typedef struct estr_alum
     int notas[5];
 }stats;
 //NO HACE FALTA PASAR LA ESTRUCTURA COMO ARGUMENTO, YA QUE SE GUARDA EN EL ARCHIVO
+
 void main()
 {
     char direccion[]="datos.dat";
