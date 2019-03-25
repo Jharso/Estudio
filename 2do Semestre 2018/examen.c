@@ -10,6 +10,7 @@ typedef struct nodo
 
 lista agregar(lista,int);
 lista crear_lista(lista);
+
 void imprimir_lista(lista);
 
 void main()
@@ -43,7 +44,7 @@ lista crear_lista(lista L)
 {
 	int valor,contador = 1;
 	srand(time(NULL));
-	while (contador<=100)
+	while (contador<=10)
     {
 		valor = rand()%100;
 		printf("\nvalor = %i \n", valor);
@@ -89,7 +90,8 @@ lista agregar(lista L,int valor)
             }
 			else
             {
-                flag = laux; laux = laux->sgte;
+                flag = laux; 
+				laux = laux->sgte;
             }
 		}
 		if(flag!=NULL)
@@ -108,8 +110,8 @@ void imprimir_lista(lista L)
 	aux = L;
     printf("\n LISTA\n");
 	while(aux!=NULL)
-    {
-		printf("\t %i ",aux->dato);
+    {	
+		printf("%i ",aux->dato);
 		aux = aux->sgte;
 	}
 	printf("\n");
