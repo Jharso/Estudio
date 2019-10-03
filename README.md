@@ -1,2 +1,2 @@
 # Estudio
-Repository dedicado al estudio del lenguaje C para la carrera de ciencias de la computación.
+Repository dedicado al estudio del lenguaje C y otros para la carrera de ingeniería en computación.
